@@ -1,0 +1,17 @@
+{
+	"name" : "Youtube energy saver",
+	"description" : "Decrease quality for music video on Youtube to save energy",
+	"version" : "1.0",
+	"manifest_version": 3,
+	"action": {
+    	"default_popup": "popup.html"
+    },
+    "content_scripts" : [
+    	{
+    		"matches" : [
+    			"https://www.youtube.com/*"
+    		],
+    		"js" : ["content.js"]
+    	}
+    ]
+}
